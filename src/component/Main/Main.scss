@@ -1,0 +1,283 @@
+.img-block {
+  width: 100%;
+
+  .img-preview {
+    width: 100%;
+    object-fit: contain;
+    object-position: center;
+  }
+}
+
+.listOfGoods {
+  width: 100%;
+  margin: 0px auto;
+  background-color: whitesmoke;
+}
+
+.caption-goods {
+  text-align: center;
+}
+
+.flex-goods {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.goods {
+  background-color: white;
+  border: 5px solid ghostwhite;
+  text-align: center;
+  color: cadetblue;
+  margin: 15px 2%;
+}
+
+.block-bed {
+  background-color: white;
+  border: 1px solid lightgray;
+  margin: 30px 20px;
+  padding: 15px 10px;
+
+
+  .flex-beds-row {
+    display: flex;
+    justify-content: space-around;
+
+    img {
+      width: 200px;
+      height: 120px;
+      object-position: center;
+      object-fit: cover;
+      margin-left: 2%;
+    }
+
+    .flex-beds-column {
+      display: flex;
+      flex-direction: column;
+
+      img {
+        width: 20px;
+        height: 20px;
+        margin: 5px 0px;
+        border-radius: 100px;
+        border: 1px solid cadetblue;
+      }
+    }
+  }
+
+  .name {
+    color: cadetblue;
+    font-size: 14px;
+  }
+
+  .price {
+    font-weight: bold;
+    font-size: 20px;
+  }
+  button {
+    border: 1px solid lightgray;
+    color: black;
+    background-color: whitesmoke;
+    width: 50%;
+    font-size: 20px;
+    outline: none;
+    cursor: pointer;
+  }
+}
+
+
+.bed {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+
+  input {
+    margin-left: 20px;
+    margin-top: 20px;
+  }
+}
+
+.details {
+  width: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+
+  .img-block-details {
+    width: 50%;
+    background-color: whitesmoke;
+
+    img {
+      width: 80%;
+      object-fit: contain;
+      object-position: center;
+    }
+  }
+  .flex-det-img-small {
+    display: flex;
+    justify-content: flex-start;
+
+    img {
+      width: 100px;
+      height: 100px;
+      margin: 10px 10px;
+    }
+  }
+
+  .desc-details {
+    background-color: whitesmoke;
+    width: 50%;
+  }
+}
+
+
+.sort {
+  position: relative;
+}
+.sort__label {
+  display: flex;
+  align-items: center;
+}
+.sort__label svg {
+  margin-right: 8px;
+}
+.sort__label b {
+  margin-right: 8px;
+}
+.sort__label span {
+  color: #CF1D40;
+  border-bottom: 1px dashed #CF1D40;
+  cursor: pointer;
+}
+.sort__popup {
+  position: absolute;
+  left: 0;
+  margin-top: 15px;
+  background: #ffffff;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.09);
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 10px 0;
+  width: 160px;
+}
+.sort__popup ul {
+  overflow: hidden;
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+.sort__popup ul li {
+  padding: 12px 20px;
+  cursor: pointer;
+}
+.sort__popup ul li.active, .sort__popup ul li:hover {
+  background: rgba(254, 95, 30, 0.05);
+}
+.sort__popup ul li.active {
+  opacity: 0.5;
+  font-weight: bold;
+  color: #CF1D40;
+}
+
+
+.text-block {
+  button {
+    border: 1px solid lightgray;
+    color: black;
+    background-color: whitesmoke;
+    width: 30%;
+    font-size: 20px;
+    outline: none;
+    cursor: pointer;
+    margin-right: 10px;
+    margin-bottom: 20px;
+  }
+}
+.av-colors {
+  border-radius: 100px;
+  width: 50px;
+  height: 50px;
+  margin: 0px 10px;
+}
+.av-names {
+  margin: 0px 15px;
+}
+
+.footer-details {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.right-sort {
+  position: absolute;
+  right: 0;
+  margin-right: 20px;
+  z-index: 1;
+}
+.category {
+  margin-right: 20px;
+}
+.flex-labels {
+  display: flex;
+  flex-direction: column;
+}
+
+.emptyCart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.autoCompletePlace {
+  position: absolute;
+  background-color: white;
+  box-shadow: 0px 5px 10px lightgray;
+  margin-left: 20px;
+  margin-bottom: 20px;
+
+  ul {
+    margin: 5px 5px;
+    padding: 0;
+    list-style-type: none;
+
+
+    li:hover {
+      background-color: lightgray;
+      cursor: pointer;
+
+    }
+  }
+}
+
+.footer-bed {
+  position: relative;
+
+  div {
+    display: inline-block;
+    background-color: lightgray;
+    margin: 20px 20px;
+    padding: 10px 10px;
+    border-radius: 100px;
+    cursor: pointer;
+    transition: background-color 0.4s ease;
+
+    &:hover {
+      background-color: darkgray;
+    }
+  }
+}
+
+.flex-bed {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+}
+.menuCategory {
+  width: 15%;
+  padding: 10px 10px;
+}
+
+.emptyCage {
+  margin-top: 80px;
+  margin-left: 20px;
+}

@@ -1,0 +1,75 @@
+.flex-cage-block {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: whitesmoke;
+
+  .left-cage {
+    width: 35%;
+
+    form {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      text-align: right;
+    }
+
+    span {
+      margin-right: 7px;
+      margin-left: 20px;
+    }
+    input {
+      width: 60%;
+      height: 25px;
+    }
+    button {
+      width: 100%;
+    }
+  }
+
+  .right-cage {
+    width: 50%;
+    background-color: white;
+  }
+}
+
+.flex-cageItems {
+  width: 90%;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: row;
+  border: 1px solid lightgray;
+  border-radius: 20px;
+
+
+  img {
+    object-position: center;
+    object-fit: contain;
+    width: 150px;
+    height: 120px;
+  }
+}
+
+.flex-textBlock {
+  display: flex;
+  flex-wrap: wrap;
+  width: 300px;
+  align-items: center;
+
+  p {
+    display: block;
+    margin: 10px 10px;
+    background-color: whitesmoke;
+    color: black;
+    border-radius: 20px;
+    padding: 10px;
+  }
+
+  .price {
+    background-color: wheat;
+  }
+}
+
+.error {
+  border: 2px solid darkred;
+}
